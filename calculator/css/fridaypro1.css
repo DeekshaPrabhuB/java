@@ -1,0 +1,644 @@
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel, .owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative; }
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1; }
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden; }
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0); }
+
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%; }
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: none; }
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  display: block; }
+
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit; }
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden; }
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab; }
+
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+.owl-carousel .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.owl-height {
+  transition: height .5s ease-in-out; }
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity .4s ease; }
+
+.owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
+  max-height: 0; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; }
+
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform .1s ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity .4s ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+header {
+  background-color: #d9534f;
+  color: #fff; }
+
+.top-header {
+  float: right; }
+  .top-header ul li {
+    display: inline;
+    padding: 20px; }
+    .top-header ul li a {
+      color: #fff;
+      text-decoration: none; }
+      .top-header ul li a:hover {
+        color: red; }
+
+.navbar-default {
+  background-color: #d9534f;
+  border: none; }
+  .navbar-default .navbar-header .navbar-brand {
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 0; }
+  .navbar-default .nav {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    margin-left: 50px; }
+    .navbar-default .nav li a {
+      color: white; }
+
+.input-group {
+  position: relative; }
+  .input-group .search-query {
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 3px; }
+  .input-group .fa {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 10; }
+
+.icons {
+  float: right;
+  margin-top: -45px;
+  margin-right: 30px; }
+  .icons i {
+    padding: 20px; }
+
+.foot-row-1 {
+  padding: 30px 0px;
+  border-bottom: 2px solid #eeeeee; }
+  .foot-row-1 .row1-border {
+    border-right: 1px solid #eeeeee; }
+    .foot-row-1 .row1-border .foot-row-1-img {
+      width: 40px; }
+
+.foot-row-2 {
+  margin-top: 30px; }
+  .foot-row-2 .foot-row-2-border {
+    border-right: 2px solid #eeeeee;
+    height: 70%; }
+    .foot-row-2 .foot-row-2-border ul li {
+      color: #777777; }
+    .foot-row-2 .foot-row-2-border ul li:hover {
+      color: #d9534f; }
+    .foot-row-2 .foot-row-2-border .foot-2-last ul li {
+      display: inline;
+      padding: 5px; }
+  .foot-row-2 .row-2-right .row-2-right-first {
+    padding-bottom: 50px; }
+    .foot-row-2 .row-2-right .row-2-right-first .form-size {
+      padding: 20px 30px;
+      width: 100%; }
+    .foot-row-2 .row-2-right .row-2-right-first .addon-back {
+      width: 60px;
+      background-color: black;
+      color: white; }
+    .foot-row-2 .row-2-right .row-2-right-first .addon-back:hover {
+      width: 60px;
+      background-color: #d9534f;
+      color: black; }
+    .foot-row-2 .row-2-right .row-2-right-first .fa-footer {
+      font-size: 20px; }
+  .foot-row-2 .row-2-right .row-2-right-second {
+    padding-bottom: 30px; }
+    .foot-row-2 .row-2-right .row-2-right-second ul li {
+      display: inline; }
+  .foot-row-2 .row-2-right .row-2-right-third {
+    padding-bottom: 30px; }
+    .foot-row-2 .row-2-right .row-2-right-third ul li {
+      display: inline;
+      padding: 10px; }
+      .foot-row-2 .row-2-right .row-2-right-third ul li a {
+        color: black; }
+    .foot-row-2 .row-2-right .row-2-right-third .fa-footer1 {
+      font-size: 24px;
+      color: #777777; }
+    .foot-row-2 .row-2-right .row-2-right-third .fa-footer1:hover {
+      font-size: 24px;
+      color: #d9534f; }
+
+.foot-row-3 {
+  border-top: 2px solid #eeeeee; }
+  .foot-row-3 .foot-tag {
+    display: inline-block;
+    padding-top: 20px; }
+  .foot-row-3 .last-list {
+    padding-top: 20px; }
+    .foot-row-3 .last-list ul li {
+      display: inline;
+      padding: 10px; }
+      .foot-row-3 .last-list ul li a {
+        text-decoration: none;
+        color: #777777; }
+  .foot-row-3 .last-list ul li {
+    display: inline;
+    padding: 10px; }
+    .foot-row-3 .last-list ul li a:hover {
+      text-decoration: none;
+      color: #d9534f; }
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */ }
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%; }
+
+.owl-carousel .owl-nav.disabled,
+.owl-carousel .owl-dots.disabled {
+  display: none; }
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-dot {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit; }
+
+.owl-carousel.owl-loaded {
+  display: block; }
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block; }
+
+.owl-carousel.owl-hidden {
+  opacity: 0; }
+
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden; }
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab; }
+
+.owl-carousel.owl-rtl {
+  direction: rtl; }
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+			calculation of the height of the owl-item that breaks page layouts
+		 */ }
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+  max-height: 0; }
+
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #f9f9f9; }
+
+aside .aside {
+  padding: 0; }
+  aside .aside .mens-cloth {
+    background-color: white;
+    padding: 20px 20px; }
+    aside .aside .mens-cloth ul {
+      list-style-type: none;
+      padding: 0; }
+      aside .aside .mens-cloth ul li {
+        padding: 5px 0; }
+        aside .aside .mens-cloth ul li a {
+          color: #d9534f;
+          text-decoration: none; }
+  aside .aside .brace-text {
+    color: gray;
+    font-weight: 300; }
+aside .color {
+  padding-top: 10px; }
+  aside .color ul {
+    border: none; }
+    aside .color ul li {
+      display: inline-block;
+      margin: 3px; }
+    aside .color ul .color-list {
+      width: 20px;
+      height: 20px;
+      border-radius: 100px;
+      display: inline-block; }
+    aside .color ul .color-pick1 {
+      background: black; }
+    aside .color ul .color-pick2 {
+      background: red; }
+    aside .color ul .color-pick3 {
+      background: blue; }
+    aside .color ul .color-pick4 {
+      background: purple; }
+    aside .color ul .color-pick5 {
+      background: yellow; }
+aside .discount {
+  color: gray; }
+  aside .discount b {
+    color: black; }
+
+.main-section h5 {
+  color: blue; }
+.main-section .main {
+  padding-top: 20px; }
+  .main-section .main .carousel .carousel-indicators .active {
+    background-color: black; }
+.main-section .top-category h3 {
+  padding-top: 20px; }
+.main-section .top-category .owl-slide .item {
+  width: 200px;
+  height: 300px; }
+
+#owl-demo .item {
+  margin: 3px;
+  background-color: white; }
+
+#owl-demo .item img {
+  display: inline-block;
+  width: 450px;
+  height: 80px; }
+
+.it h3 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 36px; }
+
+.item:hover {
+  border: 2px solid red; }
+
+.pro_price {
+  color: red; }
+
+.item {
+  text-align: center; }
+  .item .price {
+    color: red;
+    padding-right: 5px; }
+  .item .deleted {
+    color: black;
+    padding-right: 5px; }
+  .item .offer {
+    color: green; }
+
+a {
+  text-decoration: none; }
+
+.it {
+  transition: transform .4s;
+  margin: 0 auto;
+  height: 260px;
+  width: 180px; }
+
+.home-page-slider .owl-nav .owl-prev {
+  display: block;
+  position: absolute;
+  top: 120px;
+  border: 2px solid red;
+  background-color: red;
+  border-radius: 50%;
+  width: 54px;
+  height: 30px;
+  font-size: 80%; }
+
+a.left.carousel-control {
+  background-image: none; }
+
+a.right.carousel-control {
+  background-image: none; }
+
+.it:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  min-height: 36px;
+  padding: 10px; }
+
+.item-style {
+  height: 195px;
+  background-color: white; }
+
+.img-style {
+  height: 180px;
+  width: 96px;
+  padding: 20px; }
+
+.view-all {
+  color: #ff5d73;
+  font-size: 18px; }
+
+.owl-carousel .owl-nav button .owl-next {
+  color: red; }
+
+.owl-carousel .owl-nav button .owl-prev {
+  color: red; }
+
+/*# sourceMappingURL=fridaypro1.css.map */

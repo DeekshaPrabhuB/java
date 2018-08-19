@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,gBAAgB,EAAE,SAAS",
+"sources": ["../scss/arrays.scss"],
+"names": [],
+"file": "arrays.css"
+}

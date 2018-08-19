@@ -1,0 +1,71 @@
+body {
+  background-color: #DE003A; }
+
+.calci {
+  width: 350px;
+  top: 100px;
+  
+  background-color: white; }
+  .calci .upper-calci {
+    height: 100px;
+    border: 1px solid transparent;
+    width: 348px;
+    border-top-left-radius: 6.5%;
+    border-top-right-radius: 6.5%;
+    background: linear-gradient(to bottom right, #45444B, #4C4C4D); }
+
+.box {
+  height: 67px;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: white; }
+
+.col-md-3 {
+  padding: 0px; }
+
+.box1 {
+  height: 67px;
+  width: 100%;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #dad6d6; }
+
+.box2 {
+  height: 67px;
+  width: 100%;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: rgba(222, 0, 59, 0.781); }
+
+.calcup {
+  height: 100px; }
+
+.input-style {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #45444B, #4C4C4D); }
+
+.input-style1 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #45444B, #4C4C4D);
+   }
+
+.display1 {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #45444B, #4C4C4D);
+  color: white;
+  text-align: right;
+  border: none;
+  font-size: 28px; }
+
+.display1:hover {
+  border: none; }
+
+button {
+  height: 100%;
+  width: 100%;
+  border: none; }
+
+/*# sourceMappingURL=calci.css.map */

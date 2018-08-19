@@ -1,0 +1,8 @@
+/*------------------------giving background image---------------- */
+header{
+    background-image:url('/var/www/html/project/images/image-live/home.jpg');
+    height:550px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
