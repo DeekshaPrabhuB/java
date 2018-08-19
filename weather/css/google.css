@@ -1,0 +1,51 @@
+body {
+  background-color: green; }
+
+.googlestyle {
+  margin-top: 150px;
+  padding: 5px 5px; }
+  .googlestyle__logostyle {
+    height: 100px;
+    width: 100%;
+    background-size: 100px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 10px;
+    background-image: url("../images/googlelogo.jpg"); }
+  .googlestyle__signin {
+    text-align: center; }
+  .googlestyle h3 {
+    margin: -18px 0px 0px;
+    margin-left: 10px; }
+  .googlestyle__text {
+    font-size: 24px;
+    text-align: center; }
+  .googlestyle__contenttext {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-left: 10px; }
+  .googlestyle__emailtext {
+    color: rgba(10, 10, 248, 0.856); }
+  .googlestyle__input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom: 1px solid blue; }
+  .googlestyle__forgot {
+    color: rgba(10, 10, 248, 0.856);
+    padding-top: 18px;
+    padding-bottom: 30px; }
+  .googlestyle__not {
+    font-size: 13px;
+    margin-bottom: 0px; }
+  .googlestyle__learn {
+    color: rgba(10, 10, 248, 0.856); }
+  .googlestyle__btn {
+    border: 2px solid rgba(10, 10, 248, 0.856);
+    border-radius: 10%;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(10, 10, 248, 0.856);
+    color: white; }
+
+/*# sourceMappingURL=google.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,gBAAgB,EAAE,KAAK",
+"sources": ["../scss/googlestyle.scss"],
+"names": [],
+"file": "googlestyle.css"
+}

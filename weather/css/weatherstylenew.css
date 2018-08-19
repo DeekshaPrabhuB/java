@@ -1,0 +1,106 @@
+
+
+.weatherimg{
+   height:450px;
+   
+   background-image: url('../images/Verbier-10-20170306.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#textOnImg{
+    font-size: 30px;
+    color:blue;
+}
+
+.textOnImg1{
+    font-size: 50px;
+    color:blue;
+}
+
+.imagestyle123
+{
+    /* height:100%; */
+    max-width: 100%;
+} 
+
+.imgclipstyle{
+    position: absolute;
+    top:-200px;
+    right: -60px;
+    
+    clip: rect(190px, 230px, 300px, 100px);
+    
+}
+
+.imgclipstyle2ndday{
+
+    position: absolute;
+    clip:rect(0px,20px,60px,0px);
+}
+
+.imagestyle2ndheight{
+    /* background-image: url('images/weather-icons_20180813_090711714.jpg')-91px 0; */
+    height:100%;
+    width:100%;
+   /* position: absolute;
+    clip:rect(120px,56px,200px,2px);
+    top:-100px;*/
+}
+#bckimglogo{
+    /* background-image: url('images/weather-icons_20180813_090711714.jpg')-91px 0; */
+}
+#home {
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+#home3rd {
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+#home4th {
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+#home5th{
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+#home6th {
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+#home7{
+    width: 146px;
+    height: 144px;
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+#home1st{
+    width: 146px;
+    height: 144px;
+    margin-left: 120px;
+    
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+    /* background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%; */
+}
+
+/* .logostyle{
+    background: url('/var/www/html/deeksha/bootstrapnewcal/images/weather-icons_20180813_090711714.jpg') 7% 8%;
+} */
+.brdstyle{
+    border-right:2px solid;
+}
+
+.brdstyle1{
+    border-right:2px solid;
+}

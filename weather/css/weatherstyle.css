@@ -1,0 +1,51 @@
+
+
+.weatherimg{
+   height:500px;
+   
+   background-image: url('../images/Verbier-10-20170306.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textOnImg{
+    font-size: 30px;
+    color:blue;
+}
+
+.textOnImg1{
+    font-size: 50px;
+    color:blue;
+}
+
+.imagestyle123
+{
+    /* height:100%; */
+    max-width: 100%;
+} 
+
+.imgclipstyle{
+    position: absolute;
+    top:-200px;
+    right: -60px;
+    
+    clip: rect(190px, 230px, 300px, 100px);
+    
+}
+
+.imgclipstyle2ndday{
+
+    position: absolute;
+    clip:rect(0px,20px,60px,0px);
+}
+.logoheight2ndday{
+    height:200px;
+    width:200px;
+}
+.imagestyle2ndheight{
+    height:100%;
+    width:100%;
+    position: absolute;
+    clip:rect(120px,56px,200px,2px);
+    top:-100px;
+}

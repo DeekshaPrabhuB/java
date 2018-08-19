@@ -1,0 +1,11 @@
+img {
+    height:100%;
+    width:100%;
+ position: absolute;
+clip: rect(50px,60px,90px,10px);  
+}
+
+.imgstyle{
+    height:500px;
+    width:500px;
+}
