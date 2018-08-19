@@ -1,0 +1,82 @@
+/*new style*/
+.topline{
+height:"5px";
+background-color:"#66ff99";
+margin-top:"10px";
+margin-right:"10px";
+margin-left:"10px";
+}
+
+.headerstyle{
+	margin-top:40px;
+	margin-right:10px;
+	margin-left: 10px;
+}
+.logostyle{
+	font-size: 30px;
+	color: white;
+}
+
+
+.freepsdstyle{
+	font-size: 15px;
+	color: white;
+}
+
+.listvaluestyle{
+	display: inline-block;
+	padding: 20px 20px;
+font-size: 25px;
+color:white;
+}
+
+.listvaluestyle1{
+	position:relative;
+	top:-80px;
+	margin-left: 350px;
+}
+
+.contentdivstyle{
+	margin-top: 60px;
+}
+
+.contentdivstyle{
+	float:left;
+width:550px;
+	padding-left: 150px
+	
+}
+.contentdivtextstyle{
+	max-width: 350px;
+	color:white;
+}
+
+ .contentdivtextstyle1{
+	font-size: 15px;
+	color:white;
+} 
+
+.contentdivstyleleft{
+	margin-top: 10px;
+	float: left;
+margin-left: 180px;
+	height:400px;
+	width:400px;
+	border: 20px solid;
+	border-radius: 50%;
+
+	
+}
+li:hover{
+	background-color: #66ff99;
+	border-radius: 20px;
+}
+.contentbuttonstyle{
+	margin-top:10px;
+	background-color: #66ff99;
+	height:50px;
+	border:none;
+	border-radius: 50px;
+	width:200px;
+}
+/*end new style*/
